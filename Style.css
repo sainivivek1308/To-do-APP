@@ -278,6 +278,8 @@ input:checked~.bubble::after {
 .todo-item .actions button {
     display: block;
     padding: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     border-radius: 0.25rem;
     color: white;
     cursor: pointer;
@@ -393,9 +395,6 @@ input:checked~.bubble::after {
     .todo-item {
         margin-left: 0rem;
         /* background-color: #EEE !important; */
-    }
-    .todo-item .todo-content input {
-        color: black !important;
     }
     .todo-item .actions {
         display: flex;
