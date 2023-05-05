@@ -305,10 +305,19 @@ input:checked~.bubble::after {
     body {
         color: red;
         background: #FF5F6D;
-        /* fallback for old browsers */
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        /* background-color: orange; */
         background-color: rgb(235, 138, 117) !important;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .greeting h2 {
+        margin-left: 2rem !important;
+        border: 2px solid red;
+        padding-left: 2rem !important;
+        text-align: center !important;
     }
     .todo-item .todo-content input {
         color: black !important;
@@ -335,6 +344,19 @@ input:checked~.bubble::after {
 @media only screen and (max-width:400px) {
     body {
         background-color: rgb(235, 138, 117) !important;
+    }
+    main {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .greeting h2 {
+        padding-left: 2rem !important;
+        margin-left: 1rem !important;
+        border: 2px solid red;
+        text-align: center !important;
     }
     .todo-item {
         margin-left: 0rem;
