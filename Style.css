@@ -73,7 +73,7 @@ h4 {
 .greeting .title,
 .greeting input {
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
@@ -307,11 +307,6 @@ input:checked~.bubble::after {
 }
 
 @media only screen and (min-width:401px) and (max-width:768px) {
-    body {
-        color: red;
-        /* background: #FF5F6D; */
-        /* background-color: rgb(235, 138, 117) !important; */
-    }
     main {
         display: flex;
         flex-direction: column;
@@ -319,10 +314,15 @@ input:checked~.bubble::after {
         align-items: center;
     }
     .greeting {
-        padding-left: 9rem !important;
+        /* padding-left: 9rem !important; */
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
+    }
+    .greeting input {
+        /* border: 2px solid red; */
+        margin-left: 2rem;
     }
     .greeting h2 {
         /* margin-left: 0rem !important; */
@@ -364,17 +364,32 @@ input:checked~.bubble::after {
         justify-content: start;
         align-items: center;
     }
-    .greeting title {
+    .greeting h2 {
+        /* padding-left: 9rem; */
+    }
+    .greeting {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .greeting .title {
         /* padding-left: 5rem !important; */
         /* margin-left: 1rem !important; */
         /* border: 2px solid red; */
+        /* margin-left: 2rem; */
+        /* border: 2px solid red; */
         text-align: center !important;
     }
-    .greeting {
+    .greeting input {
+        /* border: 2px solid red; */
+        margin-left: 2rem;
+        padding-left: 3rem;
+    }
+    /* .greeting {
         margin-right: 3rem !important;
         padding-left: 3rem !important;
         padding-right: 0rem !important;
-    }
+    } */
     .todo-item {
         margin-left: 0rem;
         /* background-color: #EEE !important; */
