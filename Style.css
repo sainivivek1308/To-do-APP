@@ -55,19 +55,24 @@ h4 {
     margin-bottom: 0.6rem;
 }
 
-.greeting .title {
+.greeting {
+    background-color: var(--primary);
     display: flex;
+    color: white;
+    padding: 0.75rem;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .gretting .title input {
-    margin-left: 0.5rem;
-    flex: 1 1 0%;
-    min-width: 0;
+    /* margin-left: 3rem; */
+    /* flex: 1 1 0%; */
+    /* min-width: 0; */
 }
 
 .greeting .title,
-.greeting .title input {
-    color: var(--dark);
+.greeting input {
+    color: var(--white);
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -304,8 +309,8 @@ input:checked~.bubble::after {
 @media only screen and (min-width:401px) and (max-width:768px) {
     body {
         color: red;
-        background: #FF5F6D;
-        background-color: rgb(235, 138, 117) !important;
+        /* background: #FF5F6D; */
+        /* background-color: rgb(235, 138, 117) !important; */
     }
     main {
         display: flex;
@@ -313,18 +318,25 @@ input:checked~.bubble::after {
         justify-content: start;
         align-items: center;
     }
+    .greeting {
+        padding-left: 9rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .greeting h2 {
-        margin-left: 2rem !important;
-        border: 2px solid red;
-        padding-left: 2rem !important;
-        text-align: center !important;
+        /* margin-left: 0rem !important; */
+        /* border: 2px solid red; */
+        text-align: center;
+        /* padding-left: 2rem !important; */
+        /* text-align: center !important; */
     }
-    .todo-item .todo-content input {
+    /* .todo-item .todo-content input {
         color: black !important;
-    }
+    } */
     .todo-item {
         border-radius: 50px;
-        background-color: #FFF !important;
+        /* background-color: #FFF !important; */
     }
     .todo-item .actions {
         justify-content: start;
@@ -342,9 +354,9 @@ input:checked~.bubble::after {
 }
 
 @media only screen and (max-width:400px) {
-    body {
+    /* body {
         background-color: rgb(235, 138, 117) !important;
-    }
+    } */
     main {
         text-align: center;
         flex-direction: column;
@@ -352,15 +364,20 @@ input:checked~.bubble::after {
         justify-content: start;
         align-items: center;
     }
-    .greeting h2 {
-        padding-left: 2rem !important;
-        margin-left: 1rem !important;
-        border: 2px solid red;
+    .greeting title {
+        /* padding-left: 5rem !important; */
+        /* margin-left: 1rem !important; */
+        /* border: 2px solid red; */
         text-align: center !important;
+    }
+    .greeting {
+        margin-right: 3rem !important;
+        padding-left: 3rem !important;
+        padding-right: 0rem !important;
     }
     .todo-item {
         margin-left: 0rem;
-        background-color: #EEE !important;
+        /* background-color: #EEE !important; */
     }
     .todo-item .todo-content input {
         color: black !important;
