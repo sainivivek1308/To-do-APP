@@ -225,9 +225,11 @@ input:checked~.bubble::after {
     width: 100%;
     margin-top: 0.5rem;
     flex-direction: row;
-    background-color: rgb(40, 37, 37);
+    /* background-color: rgb(40, 37, 37); */
     /* border: 2px solid red; */
+    background-color: #010919;
     border-radius: 30px;
+    /* color: white !important; */
     margin: 0.78rem;
     padding: 0.75rem 0.75rem;
 }
@@ -235,7 +237,7 @@ input:checked~.bubble::after {
 .todo-item .left {
     display: flex;
     /* border: 2px solid red; */
-    color: white !important;
+    /* color: white; */
     width: 48%;
     flex: 1;
     flex-direction: row;
@@ -263,7 +265,7 @@ input:checked~.bubble::after {
 .todo-item .todo-content input {
     margin-left: 0.5rem;
     font-size: 1.25rem;
-    color: var(--dark);
+    color: white;
 }
 
 #to-do-list {
@@ -302,7 +304,7 @@ input:checked~.bubble::after {
 
 .todo-item.done .todo-content input {
     text-decoration: line-through;
-    color: white;
+    color: grey;
 }
 
 @media only screen and (min-width:401px) and (max-width:768px) {
@@ -411,6 +413,6 @@ input:checked~.bubble::after {
         /* border: 2px solid red; */
     }
     .create-to-do .options {
-        gap: 4rem;
+        gap: 2.3rem !important;
     }
 }
